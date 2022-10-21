@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Σύστημα Ανακοινώσεων
+        </title>
+    </head>
+    <body>  
+        <a href="https://www.aueb.gr/" target="_blank">ΟΠΑ</a>
+        <a href="../departments/departments.html">Διευθύνσεις</a>
+        <a href="../departments/subdepartments.html">Τμήματα</a>
+        <a href = "../departments/categories.html">Κατηγορίες</a>
+        
+        <h1>Κατηγορίες</h1>
+
+        <form>
+            <label for="departments">Διευθύνσεις</label>
+            <select name="departments" id="departments">
+                <option value="" selected disabled>Επιλεξτε Διεύθυνση</option>
+                <option value="1">Διεύθυνση Διοικητικού</option>
+                <option value="2">Διεύθυνση Οικονομικών Υπηρεσιών</option>
+            </select><br>
+
+            <label for="subdepartments">Τμήματα</label>
+            <select name="subdepartments" id="subdepartments">
+                <option value="" selected disabled>Επιλεξτε Τμήματα</option>
+                <option value="11">Τμήμα Προσωπικού</option>
+                <option value="21">Τμήμα Προμηθειών</option>
+            </select>
+
+            <label for="name">Κατηγορία</label>
+            <input type="text" name ="name" id="name" placeholder="Εισάγεται Όνομα">
+
+            <input type="submit" name ="submit" id="submit" value="Υποβολή">
+        </form>
+
+
+        <hr> 
+            <table border="1px">
+            <tr>
+                <th>Διευθυνση</th>
+                <th>Αναγνωριστικό</th>
+                <th>Τμήμα</th>
+                <th>Κατηγορία</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Διευθυνση Διοικητικού</td>
+                    <td>1</td>
+                    <td>Τμήμα Προσωπικού</td>
+                    <td>Ανακοινώσεις Προσωπικού</td>
+                </tr>
+                <tr>
+                    <td>Διεύθυνση Οικονομικών Υπηρεσιών</td>
+                    <td>2</td>
+                    <td>Τμήμα Προμηθειών</td>
+                    <td>Ανακοινώσεις Προμηθευτών</td>
+                </tr>
+            </tbody>
+            </table>
+        </hr>
+    </body>
+</html>
