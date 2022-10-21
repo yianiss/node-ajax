@@ -7,7 +7,7 @@ $(document).ready(function(){
         let username = btnValue.val();
 
         $.ajax({
-            url:'http://localhost:3000/user/findOne'+ '?' + $.param({"username": username}),
+            url:'https://studently-app.herokuapp.com/user/findOne'+ '?' + $.param({"username": username}),
             type:'get',
             dataType:'JSON'
         })
@@ -40,7 +40,7 @@ $(document).ready(function(){
         let username = btnValue.val();
 
         $.ajax({
-            url:'http://localhost:3000/user/delete'+ '?' + $.param({"username": username}),
+            url:'https://studently-app.herokuapp.com/user/delete'+ '?' + $.param({"username": username}),
             type:'delete',
             dataType:'JSON'
         })
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
         if (checkType==='modify') {
             $.ajax({
-                url: "http://localhost:3000/user/update",
+                url: "https://studently-app.herokuapp.com/user/update",
                 type: "post",
                 data: item,
                 dataType: "JSON",
@@ -105,7 +105,7 @@ $(document).ready(function(){
             });
         } else {
             $.ajax({
-                url: "http://localhost:3000/user/create",
+                url: "https://studently-app.herokuapp.com/user/create",
                 type: "post",
                 data: item,
                 dataType: "JSON",
@@ -137,7 +137,7 @@ $(document).ready(function(){
 
   function getData() {
     $.ajax({
-        url:'http://localhost:3000/user/findAll',
+        url:'https://studently-app.herokuapp.com/user/findAll',
         type:'get',
         dataType:'JSON'
     })
